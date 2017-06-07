@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_times_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg4"
+    tools:context="com.example.romel.a191project.timesUp">
+
+    <TextView
+        android:text="Game Over"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="145dp"
+        android:id="@+id/timesUp"
+        android:textSize="25sp"
+        android:textStyle="normal|bold"
+        android:textColor="@color/textColor" />
+
+    <TextView
+        android:text=" score 0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timesUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:id="@+id/score"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/textColor" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/newgame"
+        android:background="@android:color/transparent"
+        android:onClick="playAgain"
+        android:layout_below="@+id/score"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="123dp"
+        android:id="@+id/newgame"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:text="Play Again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:id="@+id/playagain"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        android:textColor="@color/textColor"
+        android:layout_alignBottom="@+id/newgame"
+        android:layout_alignLeft="@+id/timesUp"
+        android:layout_alignStart="@+id/timesUp" />
+
+</RelativeLayout>

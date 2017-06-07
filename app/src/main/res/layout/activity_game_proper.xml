@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game_proper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg2"
+    tools:context="com.example.romel.a191project.GameProper">
+
+    <TextView
+        android:text="60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timer"
+        android:textStyle="normal|bold"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/textColor" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="240dp"
+        android:layout_marginTop="92dp"
+        android:id="@+id/Question"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_below="@+id/timer"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/textColor" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/a"
+        android:background="@android:color/transparent"
+        android:onClick="pressA"
+        android:id="@+id/a"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_above="@+id/b"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="230dp"
+        android:id="@+id/choiceA"
+        android:layout_above="@+id/b"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textColor="@color/textColor" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/b"
+        android:background="@android:color/transparent"
+        android:id="@+id/b"
+        android:onClick="pressB"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_above="@+id/c"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="230dp"
+        android:id="@+id/choiceB"
+        android:layout_marginBottom="14dp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:layout_above="@+id/c"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/textColor" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/c"
+        android:background="@android:color/transparent"
+        android:id="@+id/c"
+        android:onClick="pressC"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_above="@+id/d"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="230dp"
+        android:layout_above="@+id/d"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/choiceC"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:textColor="@color/textColor" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/d"
+        android:background="@android:color/transparent"
+        android:id="@+id/d"
+        android:onClick="pressD"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="230dp"
+        android:id="@+id/choiceD"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textColor="@color/textColor" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/a"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            app:srcCompat="@drawable/heart"
+            android:id="@+id/heart3"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/heart1"
+            android:layout_toLeftOf="@+id/heart1"
+            android:layout_toStartOf="@+id/heart1"
+            android:layout_weight="1" />
+
+        <ImageView
+            app:srcCompat="@drawable/heart"
+            android:id="@+id/heart1"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_above="@+id/a"
+            android:layout_alignRight="@+id/timer"
+            android:layout_alignEnd="@+id/timer"
+            android:layout_marginBottom="17dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            app:srcCompat="@drawable/heart"
+            android:id="@+id/heart2"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/heart1"
+            android:layout_toRightOf="@+id/heart1"
+            android:layout_toEndOf="@+id/heart1"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</RelativeLayout>
